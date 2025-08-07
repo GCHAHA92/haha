@@ -6,7 +6,7 @@ st.set_page_config(page_title="📅 지급일자 차이 계산기", layout="wide
 st.title("📅 회셰처리 지연차이 계산기")
 
 st.markdown("""
-### ℹ️ 분석 기준 안내
+ℹ️ 분석 기준 안내
 
 - **대상 컬럼:** `품의일자`, `원인행위일`, `지급일자`  
 - **계산 항목:**  
