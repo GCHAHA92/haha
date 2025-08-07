@@ -3,7 +3,18 @@ import streamlit as st
 import holidays
 
 st.set_page_config(page_title="📅 지급일자 차이 계산기", layout="wide")
-st.title("📅 품의일자 ~ 지급일자 차이 계산기")
+st.title("📅 회셰처리 지연차이 계산기")
+
+st.markdown("""
+### ℹ️ 분석 기준 안내
+
+- **대상 컬럼:** `품의일자`, `원인행위일`, `지급일자`  
+- **계산 항목:**  
+  - `날짜차이(일)`: 원인행위일과 지급일자의 차이  
+  - `품의일자_지급일자_차이(일)`: 품의일자와 지급일자의 차이  
+  - `영업일수(품의~지급)`: 주말 및 대한민국 공휴일 제외 일수  
+- **결제일 포함, 법절공휴일 및 토일욜 제외
+- 
 
 uploaded_file = st.file_uploader("📤 엑셀 파일을 드래그 앤 드롭 또는 업로드하세요", type=["xlsx"])
 
